@@ -14,22 +14,25 @@ class ItemController {
     //Singleton
     static let shared = ItemController()
     
-    // When initialized, calls fetch.
-    init() {
-        do {
-            try fetchedResultsController.performFetch()
-        } catch {
-            print(error, error.localizedDescription)
-        }
-    }
-    
-    // Fetched Results Controller
-    let fetchedResultsController: NSFetchedResultsController<Item> = {
-        let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest()
-        let isCompleteSort = NSSortDescriptor(key: "isComplete", ascending: true)
-        fetchRequest.sortDescriptors = [isCompleteSort]
-        return NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: CoreDataStack.context, sectionNameKeyPath: nil, cacheName: nil)
-    }()
+      // MARK: - Properties
+      
+      // Create a variable to access the fetched results controller
+      var fetchedResultsController: NSFetchedResultsController<Item>
+      
+      // Create an initializer that gives our fetchedResultsController a value
+      init() {
+          let fetchRequest: NSFetchRequest<Item> = Item.fetchRequest()
+          
+          fetchRequest.sortDescriptors = [NSSortDescriptor(key: "isComplete", ascending: true)]
+          
+          let resultsController: NSFetchedResultsController<Item> = NSFetchedResultsController(fetchRequest: fetchRequest, managedObjectContext: CoreDataStack.context, sectionNameKeyPath: nil, cacheName: nil)
+          fetchedResultsController = resultsController
+          do {
+              try fetchedResultsController.performFetch()
+          } catch {
+              print("Error with fetching results \(error.localizedDescription)")
+          }
+      }
     
     // Crud Methods
     func createGuess(name: String) {

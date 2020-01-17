@@ -17,6 +17,7 @@
 		6571FD7A23D2149400F199BE /* CoreDataStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6571FD7923D2149400F199BE /* CoreDataStack.swift */; };
 		6571FD7E23D214FB00F199BE /* ItemController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6571FD7D23D214FB00F199BE /* ItemController.swift */; };
 		6571FD8023D2170D00F199BE /* ButtonTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6571FD7F23D2170D00F199BE /* ButtonTableViewCell.swift */; };
+		6571FD8223D219D800F199BE /* ShoppingListTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6571FD8123D219D800F199BE /* ShoppingListTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		6571FD7923D2149400F199BE /* CoreDataStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataStack.swift; sourceTree = "<group>"; };
 		6571FD7D23D214FB00F199BE /* ItemController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemController.swift; sourceTree = "<group>"; };
 		6571FD7F23D2170D00F199BE /* ButtonTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonTableViewCell.swift; sourceTree = "<group>"; };
+		6571FD8123D219D800F199BE /* ShoppingListTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoppingListTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				6571FD7F23D2170D00F199BE /* ButtonTableViewCell.swift */,
+				6571FD8123D219D800F199BE /* ShoppingListTableViewController.swift */,
 			);
 			path = "View Controllers";
 			sourceTree = "<group>";
@@ -201,6 +204,7 @@
 				6571FD7A23D2149400F199BE /* CoreDataStack.swift in Sources */,
 				6571FD7823D213EA00F199BE /* Item+Conveniece.swift in Sources */,
 				6571FD6723D212E500F199BE /* ShoppingList.xcdatamodeld in Sources */,
+				6571FD8223D219D800F199BE /* ShoppingListTableViewController.swift in Sources */,
 				6571FD5D23D212E500F199BE /* AppDelegate.swift in Sources */,
 				6571FD7E23D214FB00F199BE /* ItemController.swift in Sources */,
 				6571FD8023D2170D00F199BE /* ButtonTableViewCell.swift in Sources */,

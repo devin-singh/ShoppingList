@@ -16,6 +16,12 @@ class ButtonTableViewCell: UITableViewCell {
     // MARK: - Properties
     var delegate: ButtonTableViewCellDelegate?
     
+    var item: Item? {
+        didSet {
+            updateViews()
+        }
+    }
+    
     // MARK: - Outlets
     @IBOutlet weak var primaryLabel: UILabel!
     @IBOutlet weak var completeButton: UIButton!
@@ -36,7 +42,12 @@ class ButtonTableViewCell: UITableViewCell {
             completeButton.setImage(UIImage(named: "incomplete"), for: .normal)
         }
     }
-
+    
+    func updateViews() {
+        guard let item = item else { return }
+        primaryLabel.text = item.name
+        updateButton(item.isComplete)
+    }
 }
 
 extension ButtonTableViewCell {
