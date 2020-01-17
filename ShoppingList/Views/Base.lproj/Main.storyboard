@@ -23,13 +23,13 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                     <subviews>
                                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="g1t-ON-ZqL">
-                                            <rect key="frame" x="20.5" y="11" width="42" height="20"/>
+                                            <rect key="frame" x="20.5" y="12.5" width="207" height="21"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NXm-ed-2KQ">
-                                            <rect key="frame" x="339.5" y="7" width="46" height="28"/>
+                                            <rect key="frame" x="339.5" y="7.5" width="46" height="31"/>
                                             <state key="normal" title="Button"/>
                                             <connections>
                                                 <action selector="completeButtonTapped:" destination="hbM-LO-5ew" eventType="touchUpInside" id="VPy-Hb-fxl"/>
@@ -38,11 +38,10 @@
                                     </subviews>
                                     <constraints>
                                         <constraint firstItem="NXm-ed-2KQ" firstAttribute="width" secondItem="fL0-p6-dYF" secondAttribute="width" multiplier="0.111111" id="5Yb-3c-Tf8"/>
-                                        <constraint firstItem="g1t-ON-ZqL" firstAttribute="centerX" secondItem="fL0-p6-dYF" secondAttribute="centerX" multiplier="0.2" id="QDv-0U-FKO"/>
+                                        <constraint firstItem="g1t-ON-ZqL" firstAttribute="centerX" secondItem="fL0-p6-dYF" secondAttribute="centerX" multiplier="0.6" id="QDv-0U-FKO"/>
                                         <constraint firstItem="NXm-ed-2KQ" firstAttribute="centerY" secondItem="fL0-p6-dYF" secondAttribute="centerY" id="R5a-02-dgA"/>
                                         <constraint firstItem="g1t-ON-ZqL" firstAttribute="centerY" secondItem="fL0-p6-dYF" secondAttribute="centerY" id="RlL-hw-2Pj"/>
-                                        <constraint firstItem="g1t-ON-ZqL" firstAttribute="width" secondItem="fL0-p6-dYF" secondAttribute="width" multiplier="0.101449" id="Tqr-sx-0nV"/>
-                                        <constraint firstItem="g1t-ON-ZqL" firstAttribute="width" secondItem="fL0-p6-dYF" secondAttribute="height" multiplier="1:1" id="cGF-nh-r4q"/>
+                                        <constraint firstItem="g1t-ON-ZqL" firstAttribute="width" secondItem="fL0-p6-dYF" secondAttribute="width" multiplier="0.5" id="Tqr-sx-0nV"/>
                                         <constraint firstItem="NXm-ed-2KQ" firstAttribute="width" secondItem="fL0-p6-dYF" secondAttribute="height" multiplier="1:1" id="dag-aK-T1S"/>
                                         <constraint firstItem="NXm-ed-2KQ" firstAttribute="height" secondItem="fL0-p6-dYF" secondAttribute="height" multiplier="0.666667" id="udy-aY-Hcp"/>
                                         <constraint firstItem="NXm-ed-2KQ" firstAttribute="centerX" secondItem="fL0-p6-dYF" secondAttribute="centerX" multiplier="1.75" id="z0t-Yf-Gcs"/>
